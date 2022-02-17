@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+    overflow-x: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Image , h1 et paragraphe */
+.imgh1-group{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+img{
+    width: 10%;
+}
+
+h1{
+    font-family: 'Goudy Bookletter 1911', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 28%;
+    color: #fff;
+}
+
+p{
+    font-family: 'Goudy Bookletter 1911', serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+
+li{
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+/* Form */
+
+.form{
+    background: darkblue;
+    border: 1px solid darkblue;
+    border-width: 0 0 3px 0;
+    box-shadow: 0px 2px 5px rgba(0,0,0, .2);
+    display: flex;
+    font-size: 1.5em;
+}
+
+.form > * {
+    background: rgba(9,9,121,1);
+    border: none;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    outline: none;
+    padding: 20px;
+}
+
+.form > input {
+    width: 100%;
+}
+
+/* Boutons */
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    width: 50px;
+}
+
+.form > button {
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.formButton-active {
+    background: #26a69A;
+    transform: rotate(100deg);
+}
+
+/* liste des livres */
+
+.list-livres {
+    font-size: 1.1em;
+    padding: 0;
+    perspective: 500px;
+}
+
+.livres {
+    background: #fff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+    display: flex;
+    margin-bottom: 10px;
+    max-width: 100%;
+    padding: 10px;
+    transition: .6s;
+}
+
+.livres span:first-child{
+    width: 100%;
+}
+
+/* Animation*/
+
+.anim {
+    transform: rotateX(360deg);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bibliothèque</title>
+</head>
+<body>
+    <div class="imgh1-group">
+        <img src="./images/rm373batch13-053.jpg" alt="logo">
+        <h1>Ma bibliothèque en ligne</h1>
+    </div>
+    <p>Vous pouvez ajouter un livre que vous avez lu ou que vous comptez lire dans le futur.
+    </p>
+    <form class="form">
+        <input type="text" id="titre" class="titre" placeholder="Veuillez entrer un titre"/>
+        <input type="text" id="auteur" class="auteur" placeholder="Veuillez entrer un auteur"/>
+        <input type="text" id="genre" class="genre" placeholder="Veuillez entrer un genre"/>
+        <input type="number" id="annee" class="annee" min="1600" max="2099" step="1" placeholder="Veuillez choisir l'année"/>
+        <button type="submit">+</button>
+    </form>
+    <ul class="list-livres">
+    </ul>
+
+<script src="./script.js"></script>
+</body>
+</html>
